@@ -1,0 +1,14 @@
+numpy
+pandas
+scikit-learn
+lightgbm
+matplotlib
+seaborn
+networkx
+python-louvain
+torch
+torchvision
+torch_geometric   # if you plan to run GNNs - install per PyG instructions
+tqdm
+joblib
+tensorflow       # for simple autoencoder if you prefer Keras
