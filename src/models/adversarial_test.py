@@ -45,6 +45,12 @@ print(f"\n🔹 Original Accuracy: {orig_acc:.4f}")
 print(f"🔸 Adversarial Accuracy: {adv_acc:.4f}")
 print(f"Accuracy Drop: {(orig_acc - adv_acc)*100:.2f}%")
 
+# === Step 4: Save sample adversarial data ===v 
+with open("outputs/adversarial_results.txt", "w", encoding='utf-8') as f:
+    f.write(f"\n🔹 Original Accuracy: {orig_acc:.4f}\n")
+    f.write(f"🔸 Adversarial Accuracy: {adv_acc:.4f}\n")
+    f.write(f"Accuracy Drop: {(orig_acc - adv_acc)*100:.2f}%\n")
+
 adv_flat = X_adv.reshape(-1, X.shape[-1])
 adv_df = pd.DataFrame(adv_flat, columns=['call_count','sms_count','data_count','unique_callees','avg_duration'])
 adv_df.to_csv("outputs/adversarial_features.csv", index=False)
