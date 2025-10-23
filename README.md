@@ -140,7 +140,7 @@ pip install -r requirements.txt
 ### **5. Run the Pipeline**
 #### Step 1 - Generate Synthetic data
 ```bash
-python -m venv venv
+python src/synth_data.py
 ```
 #### Step 2 — Train Supervised Model (LightGBM)
 ```bash
