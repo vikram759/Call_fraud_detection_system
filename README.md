@@ -138,21 +138,25 @@ pip install -r requirements.txt
 
 ```
 ### **5. Run the Pipeline**
-#### Step 1 - Generate Synthetic data
+#### Step 1  —  Generate Synthetic data
 ```bash
 python src/synth_data.py
 ```
-#### Step 2 — Train Supervised Model (LightGBM)
+#### Step 2  — Feature Engineering(Windows Generation and Making Connection between Nodes)
+```bash
+python src/features.py
+```
+#### Step 3 — Train Supervised Model (LightGBM)
 ```bash
 python src/models/supervised.py
 
 ```
-#### Step 3 — Train LSTM Sequence Model
+#### Step 4 — Train LSTM Sequence Model
 ```bash
 python src/models/sequence_model.py
 
 ```
-#### Step 4 — Perform Adversarial Testing
+#### Step 5 — Perform Adversarial Testing
 ```bash
 python src/models/adversarial_test.py
 
