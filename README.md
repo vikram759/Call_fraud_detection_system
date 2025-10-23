@@ -114,8 +114,8 @@ The pipeline consists of:
 
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/call-fraud-detection.git
-cd call-fraud-detection
+git clone https://github.com/vikram759/Call_fraud_detection_system.git
+cd Call_fraud_detection_system
 ```
 ### **2. Create Virtual Environment**
 ```bash
